@@ -1,4 +1,4 @@
-# TextMate bundle for working with Redcarpet::Markdown
+# TextMate bundle for Redcarpet::Markdown
 
 [Redcarpet](https://github.com/vmg/redcarpet) is one of the most full-featured markdown renderers available. This TextMate bundle improves upon the default Markdown bundle by taking advantage of all the extra features Redcarpet has to offer.
 
