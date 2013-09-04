@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>fzvyrqnjtt@zr.pbz</string>
+	<key>contactName</key>
+	<string>Smiledawgg</string>
+	<key>description</key>
+	<string>&lt;a href="https://github.com/vmg/redcarpet"&gt;Redcarpet Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid (X)HTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.</string>
+	<key>name</key>
+	<string>Redcarpet Markdown</string>
+	<key>mainMenu</key>
+	<dict>
+        <key>items</key>
+        <array>
+            <string>3D66DA75-116E-4CEA-B49F-3116599B734A</string>
+            <string>39E59636-EBAD-434B-B374-6A3C0FF8FF0F</string>
+            <string>------------------------------------</string>
+            <string>4D18C887-4951-4F7F-8F63-95A2C6672537</string>
+            <string>------------------------------------</string>
+            <string>E41381C6-FDFE-4A88-A1C3-9606AF092027</string>
+            <string>F1F665A6-DF98-471A-8ACA-39E0A11A8D30</string>
+            <string>------------------------------------</string>
+            <string>8F74A359-30E5-4A5F-9B47-53C529DA59A3</string>
+            <string>------------------------------------</string>
+        </array>
+        <key>submenus</key>
+        <dict>
+            <key>4D18C887-4951-4F7F-8F63-95A2C6672537</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>0A09B9A8-7017-41E6-82AE-F3E9C9D8951D</string>
+                    <string>A17A657C-BE17-4C39-8EC4-5EB8A30D4454</string>
+                </array>
+                <key>name</key>
+                <string>Generate</string>
+            </dict>
+        </dict>
+	</dict>
+	<key>uuid</key>
+	<string>75CC094F-A72F-4782-B60D-34AA1A6C1DF6</string>
+</dict>
+</plist>

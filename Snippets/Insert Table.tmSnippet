@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>| First Header  | Second Header |
+| ------------- | -------------:|
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</string>
+	<key>name</key>
+	<string>Insert Table</string>
+	<key>uuid</key>
+	<string>E41381C6-FDFE-4A88-A1C3-9606AF092027</string>
+</dict>
+</plist>

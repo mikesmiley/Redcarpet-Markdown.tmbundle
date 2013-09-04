@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Redcarpet Markdown Cheat Sheet"
+redcarpet.rb "$TM_BUNDLE_SUPPORT/help.markdown"
+html_footer</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>Syntax Cheat Sheet</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>text.html.redcarpet</string>
+	<key>uuid</key>
+	<string>70120ECC-B129-4479-8A9C-F25D64037039</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

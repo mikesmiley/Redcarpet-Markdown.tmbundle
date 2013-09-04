@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+tag = STDIN.read
+fence = "\\`" * 3
+print  "#{fence}#{tag}\n$1\n#{fence}"
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@I</string>
+	<key>name</key>
+	<string>Fenced code block</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.redcarpet</string>
+	<key>uuid</key>
+	<string>F1F665A6-DF98-471A-8ACA-39E0A11A8D30</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

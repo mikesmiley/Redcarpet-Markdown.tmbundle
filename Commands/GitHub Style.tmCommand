@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+"${TM_MARKDOWN:-redcarpet.rb}"|perl -pe '
+	# make &lt;h1&gt;Header&lt;/h1&gt; into &lt;h1 id="header"&gt;Header&lt;/h1&gt;
+	# so that we can link to page#header
+	if(($tag, $title) = /&lt;(h[1-6])&gt;(.*?)&lt;\/\1&gt;/) {
+		$_ = $title;
+		s/&lt;[^&gt;]+&gt;|&amp;\w+;//g;	# remove tag and entities
+		s/[^-_ \/\w]//g;		# remove all but word and separators
+		s/[-_ \/]+/_/g;		# collapse all separators into _
+		$_ = "&lt;$tag id=\"" . (lc $_) . "\"&gt;$title&lt;/$tag&gt;\n";
+	}'
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>GitHub Style</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.redcarpet</string>
+	<key>uuid</key>
+	<string>0A09B9A8-7017-41E6-82AE-F3E9C9D8951D</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
