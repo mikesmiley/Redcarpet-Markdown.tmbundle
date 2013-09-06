@@ -1,13 +1,34 @@
-## Resources
-[daring fireball](http://daringfireball.net/projects/markdown/syntax)
-[github](http://github.github.com/github-flavored-markdown/)
+# Headers
 
-## Phrase Emphasis ##
+Redcarpet requires a space between the hashes and the header text.
 
-	*italic*   **bold**   _underline_
+```
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+```
 
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
 
-## Links ##
+# Phrase Emphasis
+
+    *italic*   **bold**   _underline_  ==highlited== ~~strikethrough~~
+
+*italic*   **bold**   _underline_   ==highlited==   ~~strikethrough~~
+
+Redcarpet is sane enough to not interpret intra-word emphasis markers without escaping:
+
+this_is_not_underlined
+
+# Links
 
 Inline:
 
@@ -20,8 +41,85 @@ Reference-style labels (titles are optional):
 	
 	  [id]: http://example.com/  "Title"
 
+# Lists
 
-## Images ##
+## Numbered Lists
+
+Using a `1. ` makes reordering easy:
+
+	1. Foo
+	1. Bar
+
+is rendered as:
+
+1. Foo
+1. Bar
+
+## Bullet Lists
+
+    - Foo
+    - Bar
+
+- Foo
+- Bar
+
+# Blockquotes
+
+	> Email-style angle brackets
+	> are used for blockquotes.
+	
+	> > And, they can be nested.
+
+	> #### Headers in blockquotes
+	> 
+	> - You can quote a list.
+	> - Etc.
+
+
+# Code Spans
+
+The traditional markdown method of tab or four spaces before each line works, but the following is preferred:
+
+    ```
+    # code
+    ```
+
+Or, specify a language for syntax highlighting:
+
+    ```ruby
+    require 'redcarpet'
+    ```
+
+renders as:
+
+```ruby
+require 'redcarpet'
+```
+
+# Horizontal Rule
+
+    ---
+
+---
+
+# Superscript
+
+    1^st
+    2^nd
+
+1^st
+2^nd
+
+# Smart Quotes
+
+    "nice quotes"
+
+"nice quotes"
+
+# Line Breaks
+Line breaks work as they should without the double-space after each line.
+
+# Images
 
 Inline (titles are optional):
 
@@ -34,103 +132,7 @@ Reference-style:
 	[id]: /url/to/img.jpg "Title"
 
 
-## Headers ##
+# References
+[Redcarpet](https://github.com/vmg/redcarpet)
+[github](http://github.github.com/github-flavored-markdown/)
 
-Setext-style:
-
-	Header 1
-	========
-	
-	Header 2
-	--------
-
-atx-style (closing #'s are optional):
-
-	# Header 1 #
-
-	## Header 2 ##
-
-	###### Header 6
-
-
-## Lists ##
-
-Ordered, without paragraphs:
-
-	1.  Foo
-	2.  Bar
-
-Unordered, with paragraphs:
-
-	*   A list item.
-	
-		With multiple paragraphs.
-
-	*   Bar
-
-You can nest them:
-
-	*   Abacus
-		* answer
-	*   Bubbles
-		1.  bunk
-		2.  bupkis
-			* BELITTLER
-		3. burper
-	*   Cunning
-
-
-## Blockquotes ##
-
-	> Email-style angle brackets
-	> are used for blockquotes.
-	
-	> > And, they can be nested.
-
-	> #### Headers in blockquotes
-	> 
-	> * You can quote a list.
-	> * Etc.
-
-
-## Code Spans ##
-
-	`<code>` spans are delimited
-	by backticks.
-
-	You can include literal backticks
-	like `` `this` ``.
-
-
-## Preformatted Code Blocks ##
-
-Indent every line of a code block by at least 4 spaces or 1 tab.
-
-	This is a normal paragraph.
-
-	    This is a preformatted
-	    code block.
-
-
-## Horizontal Rules ##
-
-Three or more dashes or asterisks:
-
-	---
-	
-	* * *
-	
-	- - - - 
-
-
-## Line Breaks ##
-Line breaks work as they should.
-
-Roses are red
-Violets are blue
-
-The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:
-
-Roses are red  
-Violets are blue
- 
