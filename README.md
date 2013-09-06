@@ -16,6 +16,7 @@ Clone to `~/Library/Application Support/Avian/Bundles` and then run `bundle inst
 - no_intra_emphasis
 - underline
 - footnotes
+- quote
 - highlight
 - superscript
 - filter_html

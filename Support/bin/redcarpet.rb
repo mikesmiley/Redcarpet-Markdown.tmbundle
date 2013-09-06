@@ -131,7 +131,8 @@ def roll_out_the_redcarpet(text)
     :underline => true,             # parse underscored emphasis as underlines
     :footnotes => true,             # parse footnotes, PHP-Markdown style
     :highlight => true,             # parse highlights. This is ==highlighted==
-    :superscript => true            # parse superscripts after the ^ char, i.e. 2^(nd) time
+    :superscript => true,           # parse superscripts after the ^ char, i.e. 2^(nd) time
+    :quote => true                  # parse quotes as smart quotes
   }
   Redcarpet::Markdown.new(renderer, extensions).render(text)
 end
