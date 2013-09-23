@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Typing Pairs: Disable _ for Raw and Links</string>
+	<string>Typing Pairs</string>
 	<key>scope</key>
-	<string>text.html.redcarpet markup.raw, text.html.redcarpet meta.link</string>
+	<string>text.html.redcarpet</string>
 	<key>settings</key>
 	<dict>
 		<key>smartTypingPairs</key>
@@ -30,9 +30,13 @@
 				<string>“</string>
 				<string>”</string>
 			</array>
+			<array>
+				<string>&lt;</string>
+				<string>&gt;</string>
+			</array>
 		</array>
 	</dict>
 	<key>uuid</key>
-	<string>146B2643-D903-49A8-9586-BE9C509D65B1</string>
+	<string>15E0B3D5-8523-40EF-B767-5AF153FFD11E</string>
 </dict>
 </plist>
