@@ -18,6 +18,17 @@ css = <<-eos
 <style>
 
 /* GitHub-style formatting */
+body, html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin: 10px;
+  padding: 0;
+  color: #333;
+}
+body {
+  font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+  line-height: 1.4;
+}
 .mark { background-color: #ffffcc } /* Highliter */
 code { /* GitHub-style inline code */
   margin: 0 2px;
@@ -25,6 +36,57 @@ code { /* GitHub-style inline code */
   white-space: nowrap;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
+  border-radius: 3px;
+}
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+h1 {
+  font-size: 28px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
   border-radius: 3px;
 }
 
@@ -137,6 +199,10 @@ def roll_out_the_redcarpet(text)
   Redcarpet::Markdown.new(renderer, extensions).render(text)
 end
 
+if ARGV.include?('--clean')
+  css = ""
+  ARGV.shift
+end
 input = ARGF.read
 STDOUT.write [css, roll_out_the_redcarpet(input)].join
 
