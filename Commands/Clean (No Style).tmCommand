@@ -14,7 +14,7 @@ redcarpet.rb --clean</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@D</string>
+	<string>@G</string>
 	<key>name</key>
 	<string>Clean (No Style)</string>
 	<key>outputCaret</key>

@@ -14,7 +14,7 @@ redcarpet.rb</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@D</string>
+	<string>@G</string>
 	<key>name</key>
 	<string>GitHub Style</string>
 	<key>outputCaret</key>
