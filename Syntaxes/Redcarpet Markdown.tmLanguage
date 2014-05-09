@@ -124,7 +124,7 @@
 					<key>end</key>
 					<string>(^|\G)`{3}</string>
 					<key>name</key>
-					<string>source.bash.redcarpet</string>
+					<string>markup.raw.block.redcarpet</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -140,7 +140,7 @@
 					<key>end</key>
 					<string>(^|\G)`{3}</string>
 					<key>name</key>
-					<string>source.c.redcarpet</string>
+					<string>markup.raw.block.redcarpet</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -165,7 +165,7 @@
 					<key>end</key>
 					<string>(^|\G)`{3}</string>
 					<key>name</key>
-					<string>source.python.redcarpet</string>
+					<string>markup.raw.block.redcarpet</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -181,7 +181,7 @@
 					<key>end</key>
 					<string>(^|\G)`{3}</string>
 					<key>name</key>
-					<string>source.ruby.redcarpet</string>
+					<string>markup.raw.block.redcarpet</string>
 					<key>patterns</key>
 					<array>
 						<dict>
